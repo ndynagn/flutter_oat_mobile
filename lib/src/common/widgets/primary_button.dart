@@ -15,7 +15,9 @@ class PrimaryButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton(
       onPressed: onPressed,
-      child: child.padding(const EdgeInsets.symmetric(vertical: 14),),
+      child: child.padding(
+        const EdgeInsets.symmetric(vertical: 14),
+      ),
     );
   }
 }

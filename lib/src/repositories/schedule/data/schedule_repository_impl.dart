@@ -1,0 +1,3 @@
+class ScheduleRepositoryImpl {
+  const ScheduleRepositoryImpl();
+}

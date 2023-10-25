@@ -1,18 +1,27 @@
 {
   "@@locale": "en",
-  "oat": "Oat",
-  "@oat": {
-    "description": "Application name"
-  },
+  "applicationName": "Oat",
   "welcome": "Welcome",
-  "follow_the_steps_below": "Follow the steps below",
-  "select_a_group": "Select a group",
-  "i_am_a_teacher": "I'm a teacher",
-  "i_am_a_student": "I'm a student",
+  "registrationTips": "Follow the steps below",
+  "pickGroup": "Select a group",
+  "teacherUserType": "I'm a teacher",
+  "studentUserType": "I'm a student",
   "continue_": "Continue",
-  "choose_a_teacher": "Choose a teacher",
+  "pickTeacher": "Choose a teacher",
   "group": "Group",
   "teacher": "Teacher",
   "home": "Home",
-  "profile": "Profile"
+  "profile": "Profile",
+  "services": "Services",
+  "unexpectedErrorMessage": "Unexpected error occurred",
+  "back": "Back",
+  "today": "Today",
+  "tomorrow": "Tomorrow",
+  "week": "Week",
+  "schedule": "Schedule",
+  "lesson": "Lesson",
+  "middleLessons": "Lessons",
+  "lessons": "Lessons",
+  "break_": "Break",
+  "minutes": "Minutes"
 }

@@ -4,7 +4,7 @@ part 'groups_response.g.dart';
 
 @JsonSerializable(createToJson: false)
 class GroupsResponse {
-  GroupsResponse({
+  const GroupsResponse({
     required this.groups,
   });
 
@@ -17,7 +17,7 @@ class GroupsResponse {
 
 @JsonSerializable(createToJson: false)
 class GroupResponse {
-  GroupResponse({
+  const GroupResponse({
     required this.group,
     required this.course,
   });

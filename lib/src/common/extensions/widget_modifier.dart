@@ -7,4 +7,13 @@ extension WidgetModifier on Widget {
       child: this,
     );
   }
+
+  Widget sliverPadding([
+    EdgeInsetsGeometry padding = const EdgeInsets.all(24),
+  ]) {
+    return SliverPadding(
+      padding: padding,
+      sliver: this,
+    );
+  }
 }

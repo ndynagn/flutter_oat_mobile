@@ -1,18 +1,30 @@
 {
   "@@locale": "ru",
-  "oat": "Оат",
+  "applicationName": "Оат",
   "@oat": {
     "description": "Название приложения"
   },
   "welcome": "Добро пожаловать",
-  "follow_the_steps_below": "Выполните действия, которые указаны ниже",
-  "select_a_group": "Выберите группу",
-  "i_am_a_teacher": "Я преподаватель",
-  "i_am_a_student": "Я студент",
+  "registrationTips": "Выполните действия, которые указаны ниже",
+  "pickGroup": "Выберите группу",
+  "teacherUserType": "Я преподаватель",
+  "studentUserType": "Я студент",
   "continue_": "Продолжить",
-  "choose_a_teacher": "Выберите преподавателя",
+  "pickTeacher": "Выберите преподавателя",
   "group": "Группа",
   "teacher": "Преподаватель",
   "home": "Главная",
-  "profile": "Профиль"
+  "profile": "Профиль",
+  "services": "Сервисы",
+  "unexpectedErrorMessage": "Произошла непредвиденная ошибка",
+  "back": "Назад",
+  "today": "Сегодня",
+  "tomorrow": "Завтра",
+  "week": "Неделя",
+  "schedule": "Расписание",
+  "lesson": "Пара",
+  "middleLessons": "Пары",
+  "lessons": "Пар",
+  "break_": "Перерыв",
+  "minutes": "Минут"
 }

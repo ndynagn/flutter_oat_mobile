@@ -3,6 +3,7 @@ abstract class AppDimensions {
 
   static const double small = 12;
   static const double medium = 16;
+  static const double mediumSmall = 20;
   static const double mediumLarge = 24;
   static const double large = 32;
   static const double circle = 100;

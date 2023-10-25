@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_oat_mobile/src/common/assets/assets.dart';
+import 'package:flutter_oat_mobile/src/common/extensions/context_extensions.dart';
+import 'package:flutter_oat_mobile/src/common/widgets/svg_icon.dart';
 import 'package:flutter_oat_mobile/src/config/routes/main_wrapper/main_bottom_nav_bar.dart';
 import 'package:go_router/go_router.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class MainWrapper extends StatelessWidget {
   const MainWrapper({
@@ -13,18 +15,27 @@ class MainWrapper extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final localizations = AppLocalizations.of(context)!;
     return Scaffold(
       body: child,
       bottomNavigationBar: MainBottomNavBar(
         items: [
           BottomNavigationBarItem(
-            label: localizations.home,
-            icon: Icon(Icons.abc),
+            label: context.localizations.home,
+            icon: SvgIcon(
+              icon: Assets.homeIcon,
+              color: child.currentIndex == 0
+                  ? context.theme.colorScheme.onPrimary
+                  : context.theme.colorScheme.primary.withOpacity(.4),
+            ),
           ),
           BottomNavigationBarItem(
-            label: localizations.profile,
-            icon: Icon(Icons.ac_unit_outlined),
+            label: context.localizations.services,
+            icon: SvgIcon(
+              icon: Assets.servicesIcon,
+              color: child.currentIndex == 1
+                  ? context.theme.colorScheme.onPrimary
+                  : context.theme.colorScheme.primary.withOpacity(.4),
+            ),
           ),
         ],
         currentIndex: child.currentIndex,

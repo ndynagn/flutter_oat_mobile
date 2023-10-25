@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_oat_mobile/src/common/extensions/context_extensions.dart';
 
 class MainBottomNavBar extends StatelessWidget {
   const MainBottomNavBar({
@@ -14,11 +15,20 @@ class MainBottomNavBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BottomNavigationBar(
-      onTap: onTap,
-      currentIndex: currentIndex,
-      items: items,
-      useLegacyColorScheme: false,
+    return Container(
+      decoration: BoxDecoration(
+        border: Border(
+          top: BorderSide(
+            color: context.theme.colorScheme.primary.withOpacity(.08),
+          ),
+        ),
+      ),
+      child: BottomNavigationBar(
+        onTap: onTap,
+        currentIndex: currentIndex,
+        items: items,
+        useLegacyColorScheme: false,
+      ),
     );
   }
 }

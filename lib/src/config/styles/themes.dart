@@ -39,6 +39,12 @@ abstract class AppThemes {
         color: Colors.black,
       ),
     ),
+    dividerTheme: DividerThemeData(
+      color: Colors.black.withOpacity(.12),
+    ),
+    progressIndicatorTheme: const ProgressIndicatorThemeData(
+      color: Colors.black,
+    ),
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ButtonStyle(
         minimumSize: const MaterialStatePropertyAll(Size.fromHeight(0)),
@@ -85,30 +91,46 @@ abstract class AppThemes {
       margin: EdgeInsets.zero,
       shape: SmoothRectangleBorder(
         borderRadius: SmoothBorderRadius(
-          cornerRadius: AppDimensions.mediumLarge,
+          cornerRadius: AppDimensions.mediumSmall,
           cornerSmoothing: 1,
         ),
       ),
     ),
-    appBarTheme: AppBarTheme(
+    appBarTheme: const AppBarTheme(
       backgroundColor: Colors.white,
       elevation: 0,
       scrolledUnderElevation: 0,
       shape: SmoothRectangleBorder(
-        borderRadius: SmoothBorderRadius(
-          cornerRadius: AppDimensions.mediumLarge,
-          cornerSmoothing: 1,
+        borderRadius: SmoothBorderRadius.vertical(
+          bottom: SmoothRadius(
+            cornerRadius: AppDimensions.mediumSmall,
+            cornerSmoothing: 1,
+          ),
         ),
       ),
     ),
     bottomNavigationBarTheme: BottomNavigationBarThemeData(
       backgroundColor: AppColors.cultured,
       elevation: 0,
-      selectedLabelStyle: AppTypography.bodySmall,
+      selectedLabelStyle: AppTypography.bodySmall.copyWith(
+        color: AppColors.brandeisBlue,
+      ),
       unselectedLabelStyle: AppTypography.bodySmall.copyWith(
         color: Colors.black.withOpacity(.4),
       ),
       type: BottomNavigationBarType.fixed,
+    ),
+    snackBarTheme: SnackBarThemeData(
+      backgroundColor: AppColors.carminePink,
+      elevation: 0,
+      behavior: SnackBarBehavior.floating,
+      insetPadding: const EdgeInsets.all(12),
+      shape: SmoothRectangleBorder(
+        borderRadius: SmoothBorderRadius(
+          cornerRadius: AppDimensions.small,
+          cornerSmoothing: 1,
+        ),
+      ),
     ),
   );
 
@@ -143,6 +165,12 @@ abstract class AppThemes {
       bodySmall: AppTypography.bodySmall.copyWith(
         color: Colors.white,
       ),
+    ),
+    dividerTheme: DividerThemeData(
+      color: Colors.white.withOpacity(.12),
+    ),
+    progressIndicatorTheme: const ProgressIndicatorThemeData(
+      color: Colors.white,
     ),
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ButtonStyle(
@@ -195,25 +223,41 @@ abstract class AppThemes {
         ),
       ),
     ),
-    appBarTheme: AppBarTheme(
+    appBarTheme: const AppBarTheme(
       backgroundColor: AppColors.raisinBlack,
       elevation: 0,
       scrolledUnderElevation: 0,
       shape: SmoothRectangleBorder(
-        borderRadius: SmoothBorderRadius(
-          cornerRadius: AppDimensions.mediumLarge,
-          cornerSmoothing: 1,
+        borderRadius: SmoothBorderRadius.vertical(
+          bottom: SmoothRadius(
+            cornerRadius: AppDimensions.mediumSmall,
+            cornerSmoothing: 1,
+          ),
         ),
       ),
     ),
     bottomNavigationBarTheme: BottomNavigationBarThemeData(
       backgroundColor: AppColors.raisinBlack,
       elevation: 0,
-      selectedLabelStyle: AppTypography.bodySmall,
+      selectedLabelStyle: AppTypography.bodySmall.copyWith(
+        color: AppColors.brandeisBlue,
+      ),
       unselectedLabelStyle: AppTypography.bodySmall.copyWith(
         color: Colors.white.withOpacity(.4),
       ),
       type: BottomNavigationBarType.fixed,
+    ),
+    snackBarTheme: SnackBarThemeData(
+      backgroundColor: AppColors.carminePink,
+      elevation: 0,
+      behavior: SnackBarBehavior.floating,
+      insetPadding: const EdgeInsets.all(12),
+      shape: SmoothRectangleBorder(
+        borderRadius: SmoothBorderRadius(
+          cornerRadius: AppDimensions.small,
+          cornerSmoothing: 1,
+        ),
+      ),
     ),
   );
 }
