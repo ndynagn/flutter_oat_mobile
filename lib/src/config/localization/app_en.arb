@@ -1,0 +1,18 @@
+{
+  "@@locale": "en",
+  "oat": "Oat",
+  "@oat": {
+    "description": "Application name"
+  },
+  "welcome": "Welcome",
+  "follow_the_steps_below": "Follow the steps below",
+  "select_a_group": "Select a group",
+  "i_am_a_teacher": "I'm a teacher",
+  "i_am_a_student": "I'm a student",
+  "continue_": "Continue",
+  "choose_a_teacher": "Choose a teacher",
+  "group": "Group",
+  "teacher": "Teacher",
+  "home": "Home",
+  "profile": "Profile"
+}

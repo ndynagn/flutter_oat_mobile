@@ -1,0 +1,65 @@
+name: flutter_oat_mobile
+description: "OAT application for mobile devices."
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.2.0-134.1.beta <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  flutter_dotenv: ^5.1.0
+  flutter_hooks: ^0.20.3
+  hooks_riverpod: ^2.4.3
+  supabase_flutter: ^1.10.22
+  riverpod_annotation: ^2.2.0
+  go_router: ^11.1.3
+  intl: ^0.18.1
+  flutter_svg: ^2.0.7
+  json_annotation: ^4.8.1
+  retrofit: ^4.0.2
+  logger: ^2.0.2+1
+  dio: ^5.3.3
+  expandable_page_view: ^1.0.17
+  image_picker: ^1.0.4
+  figma_squircle: ^0.5.3
+  pretty_dio_logger: ^1.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  build_runner: ^2.4.6
+  build_verify: ^3.1.0
+  riverpod_generator: ^3.0.0-dev.3
+  retrofit_generator: ^8.0.0
+  json_serializable: ^6.7.1
+  riverpod_lint: ^2.3.0
+  custom_lint: ^0.5.3
+
+flutter:
+  generate: true
+  uses-material-design: true
+
+  assets:
+    - .env
+    - assets/
+    - assets/icons/
+
+  fonts:
+    - family: Helvetica Neue
+      fonts:
+        - asset: fonts/helvetica_neue/helvetica_neue_medium.ttf
+          weight: 500
+        - asset: fonts/helvetica_neue/helvetica_neue_regular.ttf
+          weight: 400
+    - family: VK Sans Display
+      fonts:
+        - asset: fonts/vk_sans_display/vk_sans_display_medium.ttf
+          weight: 500
+        - asset: fonts/vk_sans_display/vk_sans_display_regular.ttf
+          weight: 400
